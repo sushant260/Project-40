@@ -21,7 +21,7 @@ class Form{
         this.input.style('width', '200px');
         this.input.style('height', '20px');
         this.input.style('background', 'lavender');
-        this.reset.position(displayWidth-100,20);
+        this.reset.position(100,20);
         this.button.position(560,500);
         this.button.style('width', '200px');
         this.button.style('height', '40px');
