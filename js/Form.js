@@ -4,6 +4,7 @@ class Form{
        this.button = createButton('Play');
        this.greeting = createElement('h2');
        this.title = createElement('h2');
+        this.reset=createButton('RESET');
     }
     hide() {
         this.greeting.hide();
@@ -20,6 +21,7 @@ class Form{
         this.input.style('width', '200px');
         this.input.style('height', '20px');
         this.input.style('background', 'lavender');
+        this.reset.position(displayWidth-100,20);
         this.button.position(560,500);
         this.button.style('width', '200px');
         this.button.style('height', '40px');
@@ -38,6 +40,10 @@ class Form{
             this.greeting.style('color', 'white');
             this.greeting.style('font-size', '100px');
         });
-
+        this.reset.mousePressed(()=>{
+      player.updateCount(0);
+      game.update(0);
+      
+    });
     }
 }
